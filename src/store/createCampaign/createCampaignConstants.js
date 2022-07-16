@@ -1,0 +1,6 @@
+export const SET_ACTIVE_STEP      = 'SET_ACTIVE_STEP';
+export const SET_COMPLETED_STEP   = 'SET_COMPLETED_STEP';
+export const SET_STEP_ONE_DATA    = 'SET_STEP_ONE_DATA';
+export const SET_STEP_TWO_DATA    = 'SET_STEP_TWO_DATA';
+export const SET_STEP_THREE_DATA  = 'SET_STEP_THREE_DATA';
+export const RESET_CAMPAIGN       = 'RESET_CAMPAIGN';

@@ -1,0 +1,52 @@
+
+# enable Docker for your repository
+options:
+    docker: true
+definitions:
+  services:
+    docker:
+      memory: 2048 
+pipelines:
+    branches:
+        master:
+        - step:
+            name: run-test
+            image: node:10-alpine
+            script:
+                - npm install
+        - step:
+            name: Build - Push - Deploy to GCP (us.gcr.io/pantheraplatform/client) for Production
+            image: google/cloud-sdk:latest
+            caches:
+                - docker
+            deployment: production
+            script:
+                # set CLOUDSDK_CONFIG environment variables
+                # - export CLOUDSDK_CONFIG=`pwd`/credentials/service-account.json
+                # - gcloud config list
+
+                # set image name
+                # - export IMAGE_NAME=[HOSTNAME]/[PROJECT-ID]/[IMAGE]:[TAG] # ex. gcr.io/my-g-project/my-cr-service 
+                #- export SERVICE_NAME=[YourCloudRunServiceName]
+
+                # Build image
+                - docker build -t us.gcr.io/pantheraplatform/client .
+
+                # Gcloud auth and check
+                - echo $GCLOUD_API_KEYFILE > ~/.gcloud-api-key.json
+                - gcloud auth activate-service-account --key-file ~/.gcloud-api-key.json
+                - gcloud config list
+
+                # config image registry with gcloud helper
+                - gcloud auth configure-docker -q
+
+                # push image to gcr
+                - docker push us.gcr.io/pantheraplatform/client
+
+                # # :-)
+                - echo "May the force be with you."
+
+                - gcloud container clusters get-credentials $K8s_CLUSTER_NAME --zone=$GCLOUD_ZONE --project $GCLOUD_PROJECT_ID
+                # DEPLOYMENT
+                - kubectl set image deployment/client-depl  client=us.gcr.io/pantheraplatform/client:latest
+                - kubectl rollout restart deployment/client-depl

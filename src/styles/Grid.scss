@@ -1,0 +1,41 @@
+@import "./Colors.scss";
+
+.gridWrap {
+  min-width: 45vw;
+  max-width: 96%;
+}
+.bold-text{
+  font-weight: bolder
+}
+.row-green {
+  background-color: $successColorOptional !important;
+}
+.row-red {
+  background-color: $alertMessageOptional !important;
+}
+.ag-side-buttons {
+  border-left: 1px solid $borderColor;
+  z-index: 0 !important;
+}
+
+.ag-root ::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: $scrollbarBackground;
+}
+.ag-root ::-webkit-scrollbar-track {
+  -webkit-box-shadow: $scrollbarShadow;
+  box-shadow: $scrollbarShadow;
+  border-radius: 10px;
+  background-color: $scrollbarBackground;
+}
+
+.ag-root ::-webkit-scrollbar-thumb {
+  box-shadow: $scrollbarShadow;
+  border-radius: 10px;
+  -webkit-box-shadow: $scrollbarShadow;
+  background-color: $scrollbarColor;
+}
+.ag-theme-material .ag-side-bar .ag-side-buttons .ag-side-button button {
+  min-height:110px !important;
+}

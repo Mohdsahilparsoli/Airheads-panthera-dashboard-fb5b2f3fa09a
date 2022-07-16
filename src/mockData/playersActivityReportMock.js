@@ -1,0 +1,122 @@
+export const playersActivityReportDataMock = [
+  {
+    name: "Leanne Graham",
+    customerId: 1,
+    email: "Sincere@april.biz",
+    currency: 'EUR - Euro',
+    realBalance: 650,
+    bonusBalance: 120,
+    country: 'United Kingdom',
+    totalBets: 300,
+    totalGgr: 180,
+    registrationDate: '12/07/2018 14:46'
+  },
+  {
+    name: "Ervin Howell",
+    customerId: 2,
+    email: "Shanna@melissa.tv",
+    currency: 'EUR - Euro',
+    realBalance: 590,
+    bonusBalance: 550,
+    country: 'Italy',
+    totalBets: 150,
+    totalGgr: 250,
+    registrationDate: '31/07/2018 22:03'
+  },
+  {
+    name: "Clementine Bauch",
+    customerId: 3,
+    email: "Nathan@yesenia.net",
+    currency: 'EUR - Euro',
+    realBalance: 465,
+    bonusBalance: 300,
+    country: 'United Kingdom',
+    totalBets: 600,
+    totalGgr: 1200,
+    registrationDate: '23/08/2018 09:49'
+  },
+  {
+    name: "Patricia Lebsack",
+    customerId: 4,
+    email: "Julianne.OConner@kory.org",
+    currency: 'EUR - Euro',
+    realBalance: 670,
+    bonusBalance: 1200,
+    country: 'United Kingdom',
+    totalBets: 2000,
+    totalGgr: 1800,
+    registrationDate: '23/08/2018 20:18'
+  },
+  {
+    name: "Chelsey Dietrich",
+    customerId: 5,
+    email: "Lucio_Hettinger@annie.ca",
+    currency: 'EUR - Euro',
+    realBalance: 620,
+    bonusBalance: 950,
+    country: 'Italy',
+    totalBets: 2200,
+    totalGgr: 1600,
+    registrationDate: '03/09/2018 19:08'
+  },
+  {
+    name: "Mrs. Dennis Schulist",
+    customerId: 6,
+    email: "Karley_Dach@jasper.info",
+    currency: 'EUR - Euro',
+    realBalance: 690,
+    bonusBalance: 600,
+    country: 'Sweden',
+    totalBets: 1000,
+    totalGgr: 1900,
+    registrationDate: '01/09/2018 12:03'
+  },
+  {
+    name: "Kurtis Weissnat",
+    customerId: 7,
+    email: "Telly.Hoeger@billy.biz",
+    currency: 'EUR - Euro',
+    realBalance: 360,
+    bonusBalance: 340,
+    country: 'United Kingdom',
+    totalBets: 500,
+    totalGgr: 650,
+    registrationDate: '06/03/2018 14:33'
+  },
+  {
+    name: "Nicholas Runolfsdottir V",
+    customerId: 8,
+    email: "Sherwood@rosamond.me",
+    currency: 'EUR - Euro',
+    realBalance: 840,
+    bonusBalance: 670,
+    country: 'United Kingdom',
+    totalBets: 550,
+    totalGgr: 500,
+    registrationDate: '22/02/2018 10:39'
+  },
+  {
+    name: "Glenna Reichert",
+    customerId: 9,
+    email: "Chaim_McDermott@dana.io",
+    currency: 'EUR - Euro',
+    realBalance: 380,
+    bonusBalance: 800,
+    country: 'Sweden',
+    totalBets: 1400,
+    totalGgr: 1200,
+    registrationDate: '15/07/2018 13:36'
+  },
+  {
+    name: "Clementina DuBuque",
+    customerId: 10,
+    email: "Rey.Padberg@karina.biz",
+    currency: 'EUR - Euro',
+    realBalance: 620,
+    bonusBalance: 1800,
+    country: 'Italy',
+    totalBets: 1500,
+    totalGgr: 1800,
+    registrationDate: '20/04/2018 16:20'
+  }
+];

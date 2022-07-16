@@ -1,0 +1,42 @@
+@import './Colors.scss';
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top:0;
+}
+hr {
+    height: 0.5px;
+    
+}
+.form-wrapper {
+    display:flex;
+}
+.formgroup {
+    width:45%;
+   display:block;
+   margin-right:5%;
+
+}
+
+.container-box{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    & .editMenuProfile{
+        display: flex;
+        flex-direction: column;
+        & .menuIcon{
+            font-size: 30px;
+            & .MuiSvgIcon-fontSizeSmall{
+                color: rgb(0, 0, 81);
+            }
+            
+        }
+        & .choosenImage{
+            font-size: 30px;
+            & .MuiSvgIcon-fontSizeSmall{
+                color: $alertMessageHover;
+            }
+        }
+    }
+    
+}

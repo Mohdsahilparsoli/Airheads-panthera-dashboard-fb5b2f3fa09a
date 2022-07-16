@@ -1,0 +1,1 @@
+export const CURRENT_MENU_TAB = 'CURRENT_MENU_TAB'

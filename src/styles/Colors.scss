@@ -1,0 +1,45 @@
+$successColor: #6a993b;
+$successColorHover: #87c847;
+$successColorOptional: #cceabb;
+
+$alertMessage: #df397c;
+$alertMessageHover: #f14d8f;
+$alertMessageOptional: #ffcbcb;
+
+$white: #fff;
+$borderColor: rgb(187, 187, 187);
+
+$scrollbarShadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+$scrollbarBackground: #f5f5f5;
+$scrollbarColor: #555;
+
+$shadow: 4px 9px 28px 0px rgba(14, 12, 40, 0.4);
+$greenShadow: 4px 9px 28px 15px rgba(0, 145, 68, 1.0);
+
+$medium: #FFBD33;
+$low: #33FF57;
+$high: #FF3374;
+$critical: #FF3333;
+
+$materialBlue: #3f51b5;
+
+:export {
+  successColor: $successColor;
+  successColorHover: $successColorHover;
+  successColorOptional: $successColorOptional;
+  alertMessage: $alertMessage;
+  alertMessageHover: $alertMessageHover;
+  alertMessageOptional: $alertMessageOptional;
+  white: $white;
+  shadow: $shadow;
+  greenShadow: $greenShadow;
+  borderColor: $borderColor;
+  scrollbarBackground: $scrollbarBackground;
+  scrollbarShadow: $scrollbarShadow;
+  scrollbarColor: $scrollbarColor;
+  medium: $medium;
+  low: $low;
+  high: $high;
+  critical: $critical;
+  materialBlue: $materialBlue
+}

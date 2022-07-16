@@ -1,0 +1,25 @@
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top:0;
+}
+hr {
+  height: 0.5px;
+  
+}
+.form-wrapper {
+  display:flex;
+}
+.formgroup {
+  width:45%;
+ display:block;
+ margin-right:5%;
+
+}
+.options-container {
+  display:flex;
+  margin-bottom:10px;
+  a, svg {
+      color: #007bff;
+  }
+}

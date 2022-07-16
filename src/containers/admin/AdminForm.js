@@ -1,0 +1,40 @@
+export const form_data = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  department: "",
+  role: "",
+  date_of_birth: "",
+  phone: "",
+  country: "",
+  city: "",
+  address: "",
+  status: "",
+};
+
+export const errors = {
+  firstName: false,
+  lastName: false,
+  email: false,
+  department: false,
+  role: false,
+  date_of_birth: false,
+  phone: false,
+  country: false,
+  city: false,
+  address: false,
+  status: false,
+};
+export const errorMessages = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  department: "",
+  role: "",
+  date_of_birth: "",
+  phone: "",
+  country: "",
+  city: "",
+  address: "",
+  status: "",
+};

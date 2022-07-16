@@ -1,0 +1,17 @@
+@import './Colors.scss';
+
+.demoFooterScss{
+    position: fixed;
+    top: 42px;
+    width: 100%;
+    font-size: 17px;
+  
+}
+
+.demoText{
+    margin: 10px 30%;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    background-color: $alertMessage;
+}
